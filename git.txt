@@ -19,13 +19,17 @@ by default master branch
 git clone <link>
 git clean -f : delete uncommited file
 **fetch vs pull
-
 git fetch :it will fetch changes on remoterepo but wont make any changes on local repo
 git diff master origin/master :it will show differance between remote repo and local repo
 git merge origin/master:it will make changes on local repo
 
 git pull:it will make directly changes on local repo
 
+**git stash:it will stash changes like draft
+git stash apply :it will pull stash changes into local repo
+git stash list :shows all commited stash
+git stash push -m "abc":we can add message to commited stash
+git stash drop 
 
 *git pull origin master :whtever new code updated will download
 
