@@ -1,0 +1,66 @@
+/home=users store in home
+/var=log files stored in var
+/var/log/messages =os logs stored
+/etc=store .conf file
+/tmp=store temp files
+/opt=store third party like java
+/lib=store library files
+/root=home dir of root
+/bin=storing binary files
+/dev=when we coonect external hd
+
+softlink
+ln -s /opt/tomcat/startup.sh /usr/local/bin/tomcatup
+find / -type d/f -iname jenkins =to find folder or file
+locat -b foldername =to find folder
+
+find . -name *war
+rm -rf folder
+man cmd - for manual
+whoami- current user
+useradd,passwd username,userdel username,groupadd groupname
+cp -R to copy directory or
+mv -R
+read-4 write-2 execute-1
+ls-o
+ifconfig ==to see ip address
+
+***++**
+tar -cvf filename . zip
+tar -xvf filename.tar unzip
+ssh-keygen -t rsa--  /.ssh folder it will store
+ssh -i username@ipaddress
+nslookup websit.com=it will give ipaddress 
+curl -o link == it will download file from internet
+env == shows enviroment variable
+env -u variable-name ==to remove env variable
+df -h ==to see memory used
+
+****++**
+
+tail/head -10 filename==shows last/first  10 lines
+pipe operator=|
+it will take o/p of first cmd and gives to 2nd cmd and give o/p
+wc =word count
+wc -l=no of lines
+wc -c=charactor count
+wc -w=word count
+grep -i=ignore case
+grep -n=search for line  no
+grep -w=search for word
+grep/tail -f filename=it will show msg dynamically growing
+
+**vi
+n=number of lines
+ndd=cut
+nyy=copy
+p=pest
+/=search
+
+**files**
+install packages
+rpm -ivh chef.rpm -->install
+rpm -qa ==>list all package
+rpm -e ==remove 
+
+

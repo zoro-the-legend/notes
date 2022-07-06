@@ -1,0 +1,24 @@
+PROCESS:
+*install docker: 
+yum install docker
+*add jenkins user in docker group:
+usermod -aG docker user
+*pull image from dockerhub:
+docker pull image-name
+*create container:
+docker run -d --name container -p 8080:8080 image-name
+*create image from dockerfile
+docker build -t imagename .
+
+
+cmd
+service docker start
+docker rm container
+docker rmi image
+docker exec -it container /bin/bash
+docker cp webapp.war tomcat-c:/usr/local/tomcat/webapps/webapp.war
+docker kill $(docker ps -q)
+docker container prune
+docker image prune -a
+-d=detached
+-it=attached

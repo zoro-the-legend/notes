@@ -1,0 +1,62 @@
+**jenkins setup**
+vi /etc/hostname
+1)install java:
+	a)go to install jenkins
+	b)install jdk 
+	amazon-linux-extras install epel
+	amazon-linux-extras install java-openjdk11
+yum install jenkins
+2.164 (2019-02) and newer: Java 8 or Java 11
+cd /etc/passwd
+change jenkins /bin/bash	
+	
+2)install maven:
+	a)cd /opt
+	  wget .tar file
+	  tar -xvzf filname
+	b)setup path  in .bash_profile
+ 	M2_HOME=/opt/maven
+	M2=/opt/maven/bin
+	JAVA_HOME= /usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64vi
+	find / -name java-11*
+	source .bash_profile 	
+
+3)install git:
+	yum install git
+	install github plugin in jenkins
+	configure git on jenkins
+
+**docker setup**
+1)create user:
+2)download plugin ssh over 
+3)download docker
+	
+
+*docker file
+FROM tomcat:latest
+COPY ./*.war /usr/local/tomcat/webapps
+RUN cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+
+*jenkins cmd
+sudo docker build -t tomcat:v1 .;
+sudo docker stop tomcat-c1;
+sudo docker rm tomcat-c1;
+sudo docker run -d --name tomcat-c1 -p 8081:8080 tomcat:v1;
+
+connect twoservers
+server1
+useradd abc
+passwd abc
+visudo add user with all
+ssh-keygen 
+ssh-copy-id -i abc@ipadd
+ 
+
+server2
+useradd
+passwd
+visudo
+vi /etc/ssh/sshd_confg==change passwd auth
+
+
+

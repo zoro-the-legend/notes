@@ -1,0 +1,6 @@
+1.create IAM Role adminaccess
+2.eksctl create cluster --name cluster-name  \
+--region ap-south-1 \
+--node-type t2.small \
+--nodes-min 2 \
+--nodes-max 2 \ 

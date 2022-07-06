@@ -1,0 +1,34 @@
+which $shell
+$*/$@=all args
+$#=no of args
+$$=PID
+$?=The exit status of the last command executed.
+$0=filename
+$!=The process number of the last background command.
+c=`expr $a - $b`
+***loops***
+while [$a -gt $b]
+do
+
+done
+
+for i in 1234
+do done
+
+for ((i=0;i<10;i++))
+{}
+ 
+if [ $a -gt 0 ]
+then
+else
+fi
+
+if(($i < 10))
+then
+else 
+fi
+
+***functions***
+##function
+function function_name
+function_name

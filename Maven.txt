@@ -1,0 +1,31 @@
+lifecycle:
+*clean -it clean all binaries and 
+*validate -it will check build is created
+*compile-compile source code
+*test -> junit--it will test var or syntax devoloper write some junitest
+*package->create jar file
+*build -it will build package
+*install->install package to local repo
+*deploy --> deploy to remote repo artifactory/nexus to store jar file
+test
+compile
+package
+deploy
+install
+junit -->sureshot plugin
+
+phases:
+initialiaze,generate source..
+
+
+project is built -->
+1)Master-Production deployable
+2)Dev-on going developer
+3)feature-multiple branches
+
+in feature branch devoloper devoloped code and after PR
+review it will merged with devoloper branch
+
+src/main==source code
+src/test==Junit tests
+targets/==jar war ear

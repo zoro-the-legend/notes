@@ -1,0 +1,62 @@
+**github push code new repo**
+1)git init:
+it will create .git file initialize git repo
+git config user.name ""
+git config user.gmail ""
+**normal-stash-commit-push 
+2)git add *
+to add file to staging
+3)git status:
+ to check file added to staging
+4)git commit -m "message"
+after commiting u can push to github repo
+5)git remote add origin <link>
+to connect remote repo to local repo
+6)git push -u origin main
+by default master branch
+
+**cloning repo
+git clone <link>
+git clean -f : delete uncommited file
+
+*git pull origin master :whtever new code updated will download
+
+**branching**
+1)git checkout : to check present branch
+2)git checkout -b dev :to create git branch
+3)git checkout dev : to switch branch
+4)git checkout -d dev: delete branch
+5)git branch -a: current branch
+
+**reset revert
+
+git reset --soft HEAD~1
+1)git reset HEAD:
+-when ur repo is not commit then u can use reset
+-we can remove recent 3 commit then use reset
+a)soft reset:
+it keep changes in staging area
+b)mixed:
+staged=>to unstage
+c)hard
+it will remove commits in commited file
+
+2)git revert <commitid> -m "msg":
+this command is use after commit
+it will revert that perticular commit and bring previous commit and make new commit
+ur vcs moves forward and work moves backward
+
+2)git checkout <filename>:
+it work only before sending(git add .) to stage area it will make changes revrse in file
+
+3)git diff
+diff helps find differences between states of a repository/files. This is useful in predicting and preventing merge conflicts.
+4)git merge --abort:Executing git merge with the --abort option will exit from the merge process and return the branch to the state before the merge began.
+5)git rev-parse HEAD:It writes latest commit id
+**FORK**
+-copy of project 
+
+what is git rebase
+
+git pull and git fetch
+git rebase

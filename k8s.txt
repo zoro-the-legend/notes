@@ -1,0 +1,19 @@
+api version:apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+  labels:
+    app: mogodb
+spec:
+replicas: 1
+selector:
+  matchlabels:
+    app:mogodb
+  template:
+    metadata:
+    labels:
+      app: mongodb
+    spec:
+      containers:
+       - name: mogodb
+         image: mongo

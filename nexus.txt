@@ -1,0 +1,5 @@
+default port:8081	
+username:admin	
+passwd:adminadmin
+use to store build atifact binaries
+tools --> nexus/artifactory
