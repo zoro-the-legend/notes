@@ -6,7 +6,10 @@ vi /etc/hostname
 	amazon-linux-extras install epel
 	amazon-linux-extras install java-openjdk11
 yum install jenkins
+
 2.164 (2019-02) and newer: Java 8 or Java 11
+
+to access jenkins user
 cd /etc/passwd
 change jenkins /bin/bash	
 	

@@ -9,6 +9,10 @@ docker pull image-name
 docker run -d --name container -p 8080:8080 image-name
 *create image from dockerfile
 docker build -t imagename .
+*create image from container
+docker commit container 
+*give tag to container
+docker tag imageid tag-1
 
 
 cmd

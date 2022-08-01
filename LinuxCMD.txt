@@ -11,10 +11,11 @@
 
 softlink
 ln -s /opt/tomcat/startup.sh /usr/local/bin/tomcatup
+
 find / -type d/f -iname jenkins =to find folder or file
 locat -b foldername =to find folder
+find . -name *.war
 
-find . -name *war
 rm -rf folder
 man cmd - for manual
 whoami- current user

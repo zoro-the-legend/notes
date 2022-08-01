@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks: 
+- name: deploy war file on tomcat
+  copy:
+    src:/tmp/build/*.war
+    dest:/opt/tomcat/webapps
+-name: module 2
+ tasks

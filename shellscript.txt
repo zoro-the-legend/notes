@@ -32,3 +32,11 @@ fi
 ##function
 function function_name
 function_name
+
+# case statement
+. function.sh
+case $n in:
+1) echo "dsf"
+   read a b
+   add $a $b ;;
+*) echo "deafault"

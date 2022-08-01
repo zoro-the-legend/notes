@@ -29,6 +29,7 @@ git pull:it will make directly changes on local repo
 git stash apply :it will pull stash changes into local repo
 git stash list :shows all commited stash
 git stash push -m "abc":we can add message to commited stash
+git stash pop 2 :it will pull change to lcal repo and drop that stash
 git stash drop 
 
 *git pull origin master :whtever new code updated will download
@@ -68,7 +69,11 @@ diff helps find differences between states of a repository/files. This is useful
 **FORK**
 -copy of project 
 
-what is git rebase
+git rebase master
+moves entire feature branch in tip of master branch
+rewrites history 
+we get much cleaner and linear project
 
-git pull and git fetch
-git rebase
+git merge
+existing history not changed
+it will make commits after 
