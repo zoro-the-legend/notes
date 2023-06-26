@@ -1,0 +1,50 @@
+  step1
+sudo apt-get update
+
+step2
+sudo apt-get install openjdk-11-jdk
+
+step3
+install jenkins
+
+step4
+master-slave connection
+
+jenkins server:
+
+vi /etc/passwd
+change jenkins user /bin/bash
+passwd jenkins
+ssh-keygen
+ssh-copy-id -i ec2-user@ipadd
+
+**slave:
+vi /etc/ssh/sshd_confg ==passwd auth
+passwd ec2-user
+
+ssh-copy-id -i ubuntu@ipadd
+jenkins server>>manage jenkins>>manage cloud and nodes>>add slave
+
+**MAVEN
+wget bin.tar.gz
+tar -xf maven.tar.gz
+vi .bashrc
+MAVEN_HOME=/opt/maven
+export MAVEN_HOME
+PATH=$MAVEN_HOME/bin:$PATH
+
+publish over ssh
+Jfrog
+
+mkdir -p /opt/artifactory/var/etc/
+cd /opt/artifactory/var/etc/
+touch ./system.yaml
+chown -R 1030:1030 /opt/artifactory/var
+chmod -R 777 /opt/artifactory/var
+docker pull docker.bintray.io/jfrog/artifactory-oss:latest
+
+
+docker run -d --name artifactory -v /opt/artifactory/var/:/var/opt/jfrog/artifactory -p 8081:8081 -p 8082:8082 docker.bintray.io/jfrog/artifactory-oss:latest
+
+
+

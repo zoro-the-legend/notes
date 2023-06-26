@@ -46,20 +46,35 @@ sudo docker stop tomcat-c1;
 sudo docker rm tomcat-c1;
 sudo docker run -d --name tomcat-c1 -p 8081:8080 tomcat:v1;
 
-connect twoservers
+*connect twoservers
 server1
 useradd abc
 passwd abc
-visudo add user with all
+visudo add user // with all
 ssh-keygen 
 ssh-copy-id -i abc@ipadd
  
-
 server2
 useradd
 passwd
 visudo
 vi /etc/ssh/sshd_confg==change passwd auth
 
+*connection slve in jenkins
+jenkins server:
+vi /etc/passwd
+change jenkins user /bin/bash
+passwd jenkins
+ssh-keygen
+ssh-copy-id -i ec2-user@ipadd
+jenkins server>>manage jenkins>>manage cloud and nodes>>add slave
+
+slave:
+vi /etc/ssh/sshd_confg
+passwd ec2-user
+
+hrbar registary
+/data
+tm
 
 
